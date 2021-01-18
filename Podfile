@@ -6,5 +6,6 @@ target 'InstaSaver' do
   use_frameworks!
   
   pod 'Alamofire'
+  pod 'Google-Mobile-Ads-SDK'
 
 end
