@@ -14,6 +14,7 @@
 		1D4925FF25B57D2200EF50EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4925FE25B57D2200EF50EA /* Assets.xcassets */; };
 		1D49260225B57D2200EF50EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D49260025B57D2200EF50EA /* LaunchScreen.storyboard */; };
 		1DBEA0B925B58B010077EC07 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0B825B58B010077EC07 /* UIButton + Extension.swift */; };
+		1DBEA0BD25B58BFC0077EC07 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0BC25B58BFC0077EC07 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1D49260125B57D2200EF50EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D49260325B57D2200EF50EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DBEA0B825B58B010077EC07 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		1DBEA0BC25B58BFC0077EC07 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		1D49261325B5848E00EF50EA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1DBEA0BC25B58BFC0077EC07 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				1D4925FA25B57D2000EF50EA /* MainViewController.swift in Sources */,
 				1D4925F625B57D2000EF50EA /* AppDelegate.swift in Sources */,
 				1D4925F825B57D2000EF50EA /* SceneDelegate.swift in Sources */,
+				1DBEA0BD25B58BFC0077EC07 /* UserModel.swift in Sources */,
 				1DBEA0B925B58B010077EC07 /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
