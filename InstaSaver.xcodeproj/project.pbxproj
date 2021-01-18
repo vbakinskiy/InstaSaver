@@ -30,6 +30,11 @@
 		1DBEA0FC25B59CFC0077EC07 /* PreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBEA0F725B59CFC0077EC07 /* PreviewCell.xib */; };
 		1DBEA10125B59D2A0077EC07 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA10025B59D2A0077EC07 /* UIImage + Extension.swift */; };
 		1DBEA10525B59D880077EC07 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA10425B59D880077EC07 /* UIViewController + Extension.swift */; };
+		1DBEA10A25B5A1670077EC07 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBEA10825B5A1670077EC07 /* SettingsCell.xib */; };
+		1DBEA10B25B5A1670077EC07 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA10925B5A1670077EC07 /* SettingsCell.swift */; };
+		1DBEA11625B5A1920077EC07 /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBEA11525B5A1920077EC07 /* SettingsViewController.storyboard */; };
+		1DBEA11925B5A1CB0077EC07 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA11825B5A1CB0077EC07 /* SettingsViewController.swift */; };
+		1DBEA11D25B5A22C0077EC07 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA11C25B5A22C0077EC07 /* SettingModel.swift */; };
 		A75B62674D1FAA227B949A96 /* Pods_InstaSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0338999262C2661A5057EDF7 /* Pods_InstaSaver.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +66,11 @@
 		1DBEA0F725B59CFC0077EC07 /* PreviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewCell.xib; sourceTree = "<group>"; };
 		1DBEA10025B59D2A0077EC07 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		1DBEA10425B59D880077EC07 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		1DBEA10825B5A1670077EC07 /* SettingsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
+		1DBEA10925B5A1670077EC07 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		1DBEA11525B5A1920077EC07 /* SettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		1DBEA11825B5A1CB0077EC07 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1DBEA11C25B5A22C0077EC07 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 		22BC3F6623CB64CD96371D7C /* Pods-InstaSaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaSaver.release.xcconfig"; path = "Target Support Files/Pods-InstaSaver/Pods-InstaSaver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +122,7 @@
 				1DBEA0BC25B58BFC0077EC07 /* UserModel.swift */,
 				1DBEA0BF25B58C610077EC07 /* PostModel.swift */,
 				1DBEA0C225B58CAF0077EC07 /* JsonModel.swift */,
+				1DBEA11C25B5A22C0077EC07 /* SettingModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 				1D49260025B57D2200EF50EA /* LaunchScreen.storyboard */,
 				1D4925FB25B57D2000EF50EA /* Main.storyboard */,
 				1DBEA0E925B59C100077EC07 /* PreviewViewController.storyboard */,
+				1DBEA11525B5A1920077EC07 /* SettingsViewController.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,6 +147,7 @@
 				1D4925F725B57D2000EF50EA /* SceneDelegate.swift */,
 				1D4925F925B57D2000EF50EA /* MainViewController.swift */,
 				1DBEA0EC25B59C460077EC07 /* PreviewViewController.swift */,
+				1DBEA11825B5A1CB0077EC07 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				1DBEA0F525B59CFC0077EC07 /* PreviewCell */,
+				1DBEA10725B5A1670077EC07 /* SettingsCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -195,6 +209,15 @@
 				1DBEA0F725B59CFC0077EC07 /* PreviewCell.xib */,
 			);
 			path = PreviewCell;
+			sourceTree = "<group>";
+		};
+		1DBEA10725B5A1670077EC07 /* SettingsCell */ = {
+			isa = PBXGroup;
+			children = (
+				1DBEA10825B5A1670077EC07 /* SettingsCell.xib */,
+				1DBEA10925B5A1670077EC07 /* SettingsCell.swift */,
+			);
+			path = SettingsCell;
 			sourceTree = "<group>";
 		};
 		27A6CE0F5B998629BDA04ADE /* Pods */ = {
@@ -273,7 +296,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DBEA10A25B5A1670077EC07 /* SettingsCell.xib in Resources */,
 				1DBEA0EA25B59C100077EC07 /* PreviewViewController.storyboard in Resources */,
+				1DBEA11625B5A1920077EC07 /* SettingsViewController.storyboard in Resources */,
 				1DBEA0FC25B59CFC0077EC07 /* PreviewCell.xib in Resources */,
 				1D49260225B57D2200EF50EA /* LaunchScreen.storyboard in Resources */,
 				1D4925FF25B57D2200EF50EA /* Assets.xcassets in Resources */,
@@ -333,7 +358,9 @@
 				1DBEA0DB25B599120077EC07 /* NetworkManager.swift in Sources */,
 				1DBEA0F025B59CA00077EC07 /* ActivityIndicator.swift in Sources */,
 				1DBEA0D025B58E330077EC07 /* URLSession + Extension.swift in Sources */,
+				1DBEA11925B5A1CB0077EC07 /* SettingsViewController.swift in Sources */,
 				1DBEA0D325B58F070077EC07 /* SaveManager.swift in Sources */,
+				1DBEA11D25B5A22C0077EC07 /* SettingModel.swift in Sources */,
 				1DBEA10125B59D2A0077EC07 /* UIImage + Extension.swift in Sources */,
 				1DBEA0E725B59A9F0077EC07 /* AdManager.swift in Sources */,
 				1D4925FA25B57D2000EF50EA /* MainViewController.swift in Sources */,
@@ -346,6 +373,7 @@
 				1DBEA0CD25B58E0F0077EC07 /* String + Extension.swift in Sources */,
 				1DBEA0C325B58CAF0077EC07 /* JsonModel.swift in Sources */,
 				1DBEA0B925B58B010077EC07 /* UIButton + Extension.swift in Sources */,
+				1DBEA10B25B5A1670077EC07 /* SettingsCell.swift in Sources */,
 				1DBEA0FB25B59CFC0077EC07 /* PreviewCell.swift in Sources */,
 				1DBEA0C925B58DE40077EC07 /* InstaManager.swift in Sources */,
 			);

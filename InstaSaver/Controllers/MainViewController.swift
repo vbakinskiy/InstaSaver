@@ -90,9 +90,15 @@ class MainViewController: UIViewController {
         }
     }
     
+    private func openSettings() {
+        let vc: SettingsViewController = SettingsViewController.loadFromStoryboard()
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     //MARK: - @IBActions
 
     @IBAction func settingsButtonPressed(_ sender: Any) {
+        openSettings()
     }
     
     @IBAction func pasteButtonPressed(_ sender: Any) {
