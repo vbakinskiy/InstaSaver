@@ -35,6 +35,9 @@
 		1DBEA11625B5A1920077EC07 /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBEA11525B5A1920077EC07 /* SettingsViewController.storyboard */; };
 		1DBEA11925B5A1CB0077EC07 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA11825B5A1CB0077EC07 /* SettingsViewController.swift */; };
 		1DBEA11D25B5A22C0077EC07 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA11C25B5A22C0077EC07 /* SettingModel.swift */; };
+		1DBEA12025B5A39F0077EC07 /* TextViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBEA11F25B5A39E0077EC07 /* TextViewController.storyboard */; };
+		1DBEA12425B5A3D00077EC07 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA12325B5A3D00077EC07 /* TextViewController.swift */; };
+		1DBEA12725B5A3F30077EC07 /* Privacy_policy_&_EULA.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1DBEA12625B5A3F30077EC07 /* Privacy_policy_&_EULA.txt */; };
 		A75B62674D1FAA227B949A96 /* Pods_InstaSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0338999262C2661A5057EDF7 /* Pods_InstaSaver.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +74,9 @@
 		1DBEA11525B5A1920077EC07 /* SettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
 		1DBEA11825B5A1CB0077EC07 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1DBEA11C25B5A22C0077EC07 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		1DBEA11F25B5A39E0077EC07 /* TextViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextViewController.storyboard; sourceTree = "<group>"; };
+		1DBEA12325B5A3D00077EC07 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		1DBEA12625B5A3F30077EC07 /* Privacy_policy_&_EULA.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Privacy_policy_&_EULA.txt"; sourceTree = "<group>"; };
 		22BC3F6623CB64CD96371D7C /* Pods-InstaSaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaSaver.release.xcconfig"; path = "Target Support Files/Pods-InstaSaver/Pods-InstaSaver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +142,7 @@
 				1D4925FB25B57D2000EF50EA /* Main.storyboard */,
 				1DBEA0E925B59C100077EC07 /* PreviewViewController.storyboard */,
 				1DBEA11525B5A1920077EC07 /* SettingsViewController.storyboard */,
+				1DBEA11F25B5A39E0077EC07 /* TextViewController.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +155,7 @@
 				1D4925F925B57D2000EF50EA /* MainViewController.swift */,
 				1DBEA0EC25B59C460077EC07 /* PreviewViewController.swift */,
 				1DBEA11825B5A1CB0077EC07 /* SettingsViewController.swift */,
+				1DBEA12325B5A3D00077EC07 /* TextViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 				1DBEA0B725B58ADF0077EC07 /* Extensions */,
 				1D4925FE25B57D2200EF50EA /* Assets.xcassets */,
 				1D49260325B57D2200EF50EA /* Info.plist */,
+				1DBEA12625B5A3F30077EC07 /* Privacy_policy_&_EULA.txt */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -297,7 +306,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DBEA10A25B5A1670077EC07 /* SettingsCell.xib in Resources */,
+				1DBEA12025B5A39F0077EC07 /* TextViewController.storyboard in Resources */,
 				1DBEA0EA25B59C100077EC07 /* PreviewViewController.storyboard in Resources */,
+				1DBEA12725B5A3F30077EC07 /* Privacy_policy_&_EULA.txt in Resources */,
 				1DBEA11625B5A1920077EC07 /* SettingsViewController.storyboard in Resources */,
 				1DBEA0FC25B59CFC0077EC07 /* PreviewCell.xib in Resources */,
 				1D49260225B57D2200EF50EA /* LaunchScreen.storyboard in Resources */,
@@ -366,6 +377,7 @@
 				1D4925FA25B57D2000EF50EA /* MainViewController.swift in Sources */,
 				1DBEA0C025B58C620077EC07 /* PostModel.swift in Sources */,
 				1D4925F625B57D2000EF50EA /* AppDelegate.swift in Sources */,
+				1DBEA12425B5A3D00077EC07 /* TextViewController.swift in Sources */,
 				1D4925F825B57D2000EF50EA /* SceneDelegate.swift in Sources */,
 				1DBEA10525B59D880077EC07 /* UIViewController + Extension.swift in Sources */,
 				1DBEA0BD25B58BFC0077EC07 /* UserModel.swift in Sources */,

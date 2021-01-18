@@ -69,6 +69,12 @@ final class SettingsViewController: UIViewController {
                           icon: UIImage(systemName: "checkmark.shield"))
         ]
     }
+    
+    private func openTextViewController() {
+        let vc: TextViewController = TextViewController.loadFromStoryboard()
+        vc.loadText(from: TextFiles.policy)
+        present(vc, animated: true, completion: nil)
+    }
 }
 
 //MARK: - UITableViewDelegate, UITableViewDataSource
@@ -98,7 +104,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
             case .rate:
                 print()
             case .policy:
-                print()
+                openTextViewController()
             }
         } else {
             NetworkManager.showNetworkReachabilityAlert(vc: self)
