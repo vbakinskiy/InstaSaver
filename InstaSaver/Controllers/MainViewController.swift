@@ -29,6 +29,11 @@ class MainViewController: UIViewController {
         setupActivityIndicator()
         setupBannerAdView()
         setupInterstitialAd()
+        setupNotification()
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     //MARK: - Private Funcs
@@ -50,6 +55,10 @@ class MainViewController: UIViewController {
         if !AdManager.isAdEnabled {
             bannerAdView.isHidden = true
         }
+    }
+    
+    private func setupNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadAd), name: NSNotification.Name(rawValue: NetworkManager.reachabilityNotification), object: nil)
     }
     
     private func setupInterstitialAd() {
@@ -93,6 +102,16 @@ class MainViewController: UIViewController {
     private func openSettings() {
         let vc: SettingsViewController = SettingsViewController.loadFromStoryboard()
         self.present(vc, animated: true, completion: nil)
+    }
+    
+    //MARK: - @objc Funcs
+    
+    @objc private func reloadAd() {
+        if AdManager.isAdEnabled{
+            bannerAdView.load(GADRequest())
+            bannerAdView.isHidden = false
+            setupInterstitialAd()
+        }
     }
     
     //MARK: - @IBActions
