@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,9 +21,13 @@
 		1DBEA0CD25B58E0F0077EC07 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0CC25B58E0F0077EC07 /* String + Extension.swift */; };
 		1DBEA0D025B58E330077EC07 /* URLSession + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0CF25B58E330077EC07 /* URLSession + Extension.swift */; };
 		1DBEA0D325B58F070077EC07 /* SaveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0D225B58F070077EC07 /* SaveManager.swift */; };
+		1DBEA0DB25B599120077EC07 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0DA25B599120077EC07 /* NetworkManager.swift */; };
+		A75B62674D1FAA227B949A96 /* Pods_InstaSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0338999262C2661A5057EDF7 /* Pods_InstaSaver.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0338999262C2661A5057EDF7 /* Pods_InstaSaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaSaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFDBB8338CEDA6ADF37F189 /* Pods-InstaSaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaSaver.debug.xcconfig"; path = "Target Support Files/Pods-InstaSaver/Pods-InstaSaver.debug.xcconfig"; sourceTree = "<group>"; };
 		1D4925F225B57D2000EF50EA /* InstaSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4925F525B57D2000EF50EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D4925F725B57D2000EF50EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		1DBEA0CC25B58E0F0077EC07 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		1DBEA0CF25B58E330077EC07 /* URLSession + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession + Extension.swift"; sourceTree = "<group>"; };
 		1DBEA0D225B58F070077EC07 /* SaveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveManager.swift; sourceTree = "<group>"; };
+		1DBEA0DA25B599120077EC07 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		22BC3F6623CB64CD96371D7C /* Pods-InstaSaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaSaver.release.xcconfig"; path = "Target Support Files/Pods-InstaSaver/Pods-InstaSaver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75B62674D1FAA227B949A96 /* Pods_InstaSaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +65,8 @@
 			children = (
 				1D4925F425B57D2000EF50EA /* InstaSaver */,
 				1D4925F325B57D2000EF50EA /* Products */,
+				27A6CE0F5B998629BDA04ADE /* Pods */,
+				B18F42586FA4F61000A7E1E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,8 +144,26 @@
 			children = (
 				1DBEA0C825B58DE40077EC07 /* InstaManager.swift */,
 				1DBEA0D225B58F070077EC07 /* SaveManager.swift */,
+				1DBEA0DA25B599120077EC07 /* NetworkManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		27A6CE0F5B998629BDA04ADE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CFDBB8338CEDA6ADF37F189 /* Pods-InstaSaver.debug.xcconfig */,
+				22BC3F6623CB64CD96371D7C /* Pods-InstaSaver.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B18F42586FA4F61000A7E1E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0338999262C2661A5057EDF7 /* Pods_InstaSaver.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D49260625B57D2200EF50EA /* Build configuration list for PBXNativeTarget "InstaSaver" */;
 			buildPhases = (
+				8E1050EB80C6664762CC521B /* [CP] Check Pods Manifest.lock */,
 				1D4925EE25B57D2000EF50EA /* Sources */,
 				1D4925EF25B57D2000EF50EA /* Frameworks */,
 				1D4925F025B57D2000EF50EA /* Resources */,
+				69052A92442B22D07552F106 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,11 +233,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69052A92442B22D07552F106 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaSaver/Pods-InstaSaver-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaSaver/Pods-InstaSaver-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaSaver/Pods-InstaSaver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E1050EB80C6664762CC521B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaSaver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D4925EE25B57D2000EF50EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DBEA0DB25B599120077EC07 /* NetworkManager.swift in Sources */,
 				1DBEA0D025B58E330077EC07 /* URLSession + Extension.swift in Sources */,
 				1DBEA0D325B58F070077EC07 /* SaveManager.swift in Sources */,
 				1D4925FA25B57D2000EF50EA /* MainViewController.swift in Sources */,
@@ -363,6 +435,7 @@
 		};
 		1D49260725B57D2200EF50EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CFDBB8338CEDA6ADF37F189 /* Pods-InstaSaver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -383,6 +456,7 @@
 		};
 		1D49260825B57D2200EF50EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22BC3F6623CB64CD96371D7C /* Pods-InstaSaver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
