@@ -102,7 +102,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         if NetworkManager.shared.isNetworkAvailable {
             switch settings[indexPath.row].type {
             case .rate:
-                print()
+                RateManager.requestReviewManually()
             case .policy:
                 openTextViewController()
             }

@@ -38,6 +38,8 @@
 		1DBEA12025B5A39F0077EC07 /* TextViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBEA11F25B5A39E0077EC07 /* TextViewController.storyboard */; };
 		1DBEA12425B5A3D00077EC07 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA12325B5A3D00077EC07 /* TextViewController.swift */; };
 		1DBEA12725B5A3F30077EC07 /* Privacy_policy_&_EULA.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1DBEA12625B5A3F30077EC07 /* Privacy_policy_&_EULA.txt */; };
+		1DBEA12A25B5A4FE0077EC07 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA12925B5A4FE0077EC07 /* UserDefaultsManager.swift */; };
+		1DBEA12E25B5A57B0077EC07 /* RateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA12D25B5A57B0077EC07 /* RateManager.swift */; };
 		A75B62674D1FAA227B949A96 /* Pods_InstaSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0338999262C2661A5057EDF7 /* Pods_InstaSaver.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,8 @@
 		1DBEA11F25B5A39E0077EC07 /* TextViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextViewController.storyboard; sourceTree = "<group>"; };
 		1DBEA12325B5A3D00077EC07 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		1DBEA12625B5A3F30077EC07 /* Privacy_policy_&_EULA.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Privacy_policy_&_EULA.txt"; sourceTree = "<group>"; };
+		1DBEA12925B5A4FE0077EC07 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		1DBEA12D25B5A57B0077EC07 /* RateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateManager.swift; sourceTree = "<group>"; };
 		22BC3F6623CB64CD96371D7C /* Pods-InstaSaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaSaver.release.xcconfig"; path = "Target Support Files/Pods-InstaSaver/Pods-InstaSaver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +194,8 @@
 				1DBEA0D225B58F070077EC07 /* SaveManager.swift */,
 				1DBEA0DA25B599120077EC07 /* NetworkManager.swift */,
 				1DBEA0E625B59A9F0077EC07 /* AdManager.swift */,
+				1DBEA12925B5A4FE0077EC07 /* UserDefaultsManager.swift */,
+				1DBEA12D25B5A57B0077EC07 /* RateManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 				1DBEA0D325B58F070077EC07 /* SaveManager.swift in Sources */,
 				1DBEA11D25B5A22C0077EC07 /* SettingModel.swift in Sources */,
 				1DBEA10125B59D2A0077EC07 /* UIImage + Extension.swift in Sources */,
+				1DBEA12A25B5A4FE0077EC07 /* UserDefaultsManager.swift in Sources */,
 				1DBEA0E725B59A9F0077EC07 /* AdManager.swift in Sources */,
 				1D4925FA25B57D2000EF50EA /* MainViewController.swift in Sources */,
 				1DBEA0C025B58C620077EC07 /* PostModel.swift in Sources */,
@@ -384,6 +391,7 @@
 				1DBEA0ED25B59C460077EC07 /* PreviewViewController.swift in Sources */,
 				1DBEA0CD25B58E0F0077EC07 /* String + Extension.swift in Sources */,
 				1DBEA0C325B58CAF0077EC07 /* JsonModel.swift in Sources */,
+				1DBEA12E25B5A57B0077EC07 /* RateManager.swift in Sources */,
 				1DBEA0B925B58B010077EC07 /* UIButton + Extension.swift in Sources */,
 				1DBEA10B25B5A1670077EC07 /* SettingsCell.swift in Sources */,
 				1DBEA0FB25B59CFC0077EC07 /* PreviewCell.swift in Sources */,
