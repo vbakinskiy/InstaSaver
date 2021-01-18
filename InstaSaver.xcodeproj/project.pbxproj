@@ -22,6 +22,7 @@
 		1DBEA0D025B58E330077EC07 /* URLSession + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0CF25B58E330077EC07 /* URLSession + Extension.swift */; };
 		1DBEA0D325B58F070077EC07 /* SaveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0D225B58F070077EC07 /* SaveManager.swift */; };
 		1DBEA0DB25B599120077EC07 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0DA25B599120077EC07 /* NetworkManager.swift */; };
+		1DBEA0E725B59A9F0077EC07 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0E625B59A9F0077EC07 /* AdManager.swift */; };
 		A75B62674D1FAA227B949A96 /* Pods_InstaSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0338999262C2661A5057EDF7 /* Pods_InstaSaver.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		1DBEA0CF25B58E330077EC07 /* URLSession + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession + Extension.swift"; sourceTree = "<group>"; };
 		1DBEA0D225B58F070077EC07 /* SaveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveManager.swift; sourceTree = "<group>"; };
 		1DBEA0DA25B599120077EC07 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1DBEA0E625B59A9F0077EC07 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
 		22BC3F6623CB64CD96371D7C /* Pods-InstaSaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaSaver.release.xcconfig"; path = "Target Support Files/Pods-InstaSaver/Pods-InstaSaver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 				1DBEA0C825B58DE40077EC07 /* InstaManager.swift */,
 				1DBEA0D225B58F070077EC07 /* SaveManager.swift */,
 				1DBEA0DA25B599120077EC07 /* NetworkManager.swift */,
+				1DBEA0E625B59A9F0077EC07 /* AdManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				1DBEA0DB25B599120077EC07 /* NetworkManager.swift in Sources */,
 				1DBEA0D025B58E330077EC07 /* URLSession + Extension.swift in Sources */,
 				1DBEA0D325B58F070077EC07 /* SaveManager.swift in Sources */,
+				1DBEA0E725B59A9F0077EC07 /* AdManager.swift in Sources */,
 				1D4925FA25B57D2000EF50EA /* MainViewController.swift in Sources */,
 				1DBEA0C025B58C620077EC07 /* PostModel.swift in Sources */,
 				1D4925F625B57D2000EF50EA /* AppDelegate.swift in Sources */,
