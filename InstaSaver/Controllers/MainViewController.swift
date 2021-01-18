@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class MainViewController: UIViewController {
     
@@ -16,6 +17,8 @@ class MainViewController: UIViewController {
     
     //MARK: - Private Properties
     
+    private var bannerAdView: GADBannerView!
+    private var interstitialAd: GADInterstitial!
     private lazy var activityIndicator = ActivityIndicator()
     
     //MARK: - Lifecycle
@@ -24,6 +27,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         setupButton()
         setupActivityIndicator()
+        setupBannerAdView()
+        setupInterstitialAd()
     }
     
     //MARK: - Private Funcs
@@ -36,6 +41,21 @@ class MainViewController: UIViewController {
         activityIndicator.add(to: view)
     }
     
+    private func setupBannerAdView() {
+        bannerAdView = AdManager.createAndLoadBanner(vc: self)
+        view.addSubview(bannerAdView)
+        bannerAdView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        bannerAdView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        
+        if !AdManager.isAdEnabled {
+            bannerAdView.isHidden = true
+        }
+    }
+    
+    private func setupInterstitialAd() {
+        interstitialAd = AdManager.createAndLoadInterstitial(vc: self)
+    }
+    
     //MARK: - @IBActions
 
     @IBAction func settingsButtonPressed(_ sender: Any) {
@@ -43,6 +63,13 @@ class MainViewController: UIViewController {
     
     @IBAction func pasteButtonPressed(_ sender: Any) {
     }
-    
 }
 
+//MARK: - GADInterstitialDelegate
+
+extension MainViewController: GADInterstitialDelegate {
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        setupInterstitialAd()
+        
+    }
+}
