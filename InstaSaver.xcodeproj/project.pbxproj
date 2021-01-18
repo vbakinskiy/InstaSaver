@@ -16,6 +16,7 @@
 		1DBEA0B925B58B010077EC07 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0B825B58B010077EC07 /* UIButton + Extension.swift */; };
 		1DBEA0BD25B58BFC0077EC07 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0BC25B58BFC0077EC07 /* UserModel.swift */; };
 		1DBEA0C025B58C620077EC07 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0BF25B58C610077EC07 /* PostModel.swift */; };
+		1DBEA0C325B58CAF0077EC07 /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEA0C225B58CAF0077EC07 /* JsonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1DBEA0B825B58B010077EC07 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		1DBEA0BC25B58BFC0077EC07 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1DBEA0BF25B58C610077EC07 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		1DBEA0C225B58CAF0077EC07 /* JsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				1DBEA0BC25B58BFC0077EC07 /* UserModel.swift */,
 				1DBEA0BF25B58C610077EC07 /* PostModel.swift */,
+				1DBEA0C225B58CAF0077EC07 /* JsonModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				1D4925F625B57D2000EF50EA /* AppDelegate.swift in Sources */,
 				1D4925F825B57D2000EF50EA /* SceneDelegate.swift in Sources */,
 				1DBEA0BD25B58BFC0077EC07 /* UserModel.swift in Sources */,
+				1DBEA0C325B58CAF0077EC07 /* JsonModel.swift in Sources */,
 				1DBEA0B925B58B010077EC07 /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
