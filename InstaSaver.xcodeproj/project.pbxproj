@@ -56,15 +56,47 @@
 		1D4925F425B57D2000EF50EA /* InstaSaver */ = {
 			isa = PBXGroup;
 			children = (
+				1D49261325B5848E00EF50EA /* Models */,
+				1D49261425B584C500EF50EA /* Views */,
+				1D49261525B584CE00EF50EA /* Controllers */,
+				1D49261625B584DB00EF50EA /* SupportFiles */,
+			);
+			path = InstaSaver;
+			sourceTree = "<group>";
+		};
+		1D49261325B5848E00EF50EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D49261425B584C500EF50EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D49260025B57D2200EF50EA /* LaunchScreen.storyboard */,
+				1D4925FB25B57D2000EF50EA /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1D49261525B584CE00EF50EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				1D4925F525B57D2000EF50EA /* AppDelegate.swift */,
 				1D4925F725B57D2000EF50EA /* SceneDelegate.swift */,
 				1D4925F925B57D2000EF50EA /* ViewController.swift */,
-				1D4925FB25B57D2000EF50EA /* Main.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1D49261625B584DB00EF50EA /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
 				1D4925FE25B57D2200EF50EA /* Assets.xcassets */,
-				1D49260025B57D2200EF50EA /* LaunchScreen.storyboard */,
 				1D49260325B57D2200EF50EA /* Info.plist */,
 			);
-			path = InstaSaver;
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,11 +320,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RAD78J533;
-				INFOPLIST_FILE = InstaSaver/Info.plist;
+				INFOPLIST_FILE = InstaSaver/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vyacheslav.bakinskiy.InstaSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -307,11 +340,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RAD78J533;
-				INFOPLIST_FILE = InstaSaver/Info.plist;
+				INFOPLIST_FILE = InstaSaver/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vyacheslav.bakinskiy.InstaSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
