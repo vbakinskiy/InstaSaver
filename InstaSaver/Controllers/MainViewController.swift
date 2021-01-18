@@ -14,17 +14,26 @@ class MainViewController: UIViewController {
     
     @IBOutlet var pasteButton: UIButton!
     
+    //MARK: - Private Properties
+    
+    private lazy var activityIndicator = ActivityIndicator()
+    
     //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButton()
+        setupActivityIndicator()
     }
     
     //MARK: - Private Funcs
     
     private func setupButton() {
         pasteButton.applyInstagramStyle()
+    }
+    
+    private func setupActivityIndicator() {
+        activityIndicator.add(to: view)
     }
     
     //MARK: - @IBActions
